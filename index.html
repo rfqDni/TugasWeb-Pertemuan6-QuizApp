@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz App — TR 6</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+
+  <main class="quiz-container">
+    <!-- HEADER -->
+    <header class="quiz-header">
+      <h1>🧠 Interactive Quiz</h1>
+      <p class="subtitle">Mari uji pengetahuanmu!</p>
+    </header>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-wrapper">
+      <div class="progress-info">
+        <span id="progress">Soal 1/5</span>
+        <span id="timer" class="timer">⏱ 15s</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- QUIZ CONTENT -->
+    <section id="quizContent" class="quiz-content">
+      <div id="question" class="question"></div>
+      <div id="options" class="options-grid"></div>
+      <button id="nextBtn" class="btn-next hidden">Next →</button>
+    </section>
+
+    <!-- RESULT -->
+    <section id="result" class="result hidden">
+      <div class="result-icon">🏆</div>
+      <h2>Yey Quiz Selesai!</h2>
+      <p class="score-text">Skor kamu: <span id="score"></span></p>
+      <p class="highscore-text">Wow high Score: <span id="highScore"></span></p>
+      <button id="restartBtn" class="btn-restart">🔄 Mau ulangi Quiz???</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Tugas Rutin 6</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
